@@ -13,8 +13,6 @@ t = [0:0.01:20];
 
 [T,Y] = ode45(@myodefun, t, [r0, rDot0, theta0, thetaDot0], [], k, m, L0, g);
 
-Y
-
 plot(T,Y(:,1), T, Y(:,3));
 title("Plot of r(t) and theta(t)")
 legend("r(t)", "(theta(t)")
